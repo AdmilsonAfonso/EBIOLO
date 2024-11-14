@@ -1,0 +1,79 @@
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [showLogin, setShowLogin] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLogin(true);
+  };
+
+  const handleCloseClick = () => {
+    setShowLogin(false);
+  };
+
+  return (
+    <div className={`App ${showLogin ? 'blur' : ''}`}>
+      <button onClick={handleLoginClick}>Login</button>
+      
+      {showLogin && (
+        <div className="login-modal">
+          <div className="modal-content">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" />
+            <input type="password" placeholder="Password" />
+            <button onClick={handleCloseClick}>Close</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default App;
+/* Estilo para o conteúdo principal com efeito de desfoque */
+.App {
+    text-align: center;
+    padding: 20px;
+    transition: filter 0.3s ease;
+  }
+  
+  .App.blur {
+    filter: blur(5px);
+  }
+  
+  /* Estilos para o modal de login */
+  .login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  

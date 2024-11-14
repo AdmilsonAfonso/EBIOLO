@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer ul{
+    list-style: none;
+    color: rgb(196, 22, 129);
+    margin: 20px;
+    font-weight: bold;
+}
+.footer ul li:hover{
+    transition: 0.5s;
+    color: yellow;
+}

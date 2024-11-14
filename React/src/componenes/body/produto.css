@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bodyP{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.produto{
+    width: 150px;
+    height: 180px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    
+}
+.produto .produ{
+    width: 150px;
+    height:130px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.produto .descricao{
+    margin-top: 5px;
+    justify-items: center;
+    margin-left: 4px;
+    font-weight: bold;
+}

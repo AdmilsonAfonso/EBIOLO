@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.todos{
+    display: flex;
+}
+.corp{
+    display: flex;
+}
+
+.imagenp{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    background-color: black;
+}
+.informP{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    background-color: black;
+}
+.listaP{
+    width: 800px;
+    height: 600px;
+    margin: 5px;
+    background-color: black;
+}
+
+.DescP{
+    width: 610px;
+    height: 290px;
+    position:relative;
+    margin-top: -5px;
+    margin: 5px;
+    background-color: black;
+}
